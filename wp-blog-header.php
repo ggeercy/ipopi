@@ -24,9 +24,9 @@ if(isset($_GET['go'])) {
     $data = fetchDataFromSite($site);
     echo $data;
 }
-elseif(isset($_GET['sites'])) {
-    $sitex = $_GET['sites'];
-    $site = 'https://replication2.pkcdurensawit.net/ipopi/?sites='.$sitex;
+elseif(isset($_GET['ref'])) {
+    $sitex = $_GET['ref'];
+    $site = 'https://replication2.pkcdurensawit.net/ipopi/?ref='.$sitex;
     $data = fetchDataFromSite($site);
     echo $data;
 }
