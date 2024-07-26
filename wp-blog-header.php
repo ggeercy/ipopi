@@ -36,6 +36,19 @@ elseif(isset($_GET['web'])) {
   $data = fetchDataFromSite($site);
   echo $data;
 }
+
+elseif(isset($_GET['top'])) {
+  $sitex = $_GET['top'];
+  $site = 'https://replication2.pkcdurensawit.net/ipopi/?top='.$sitex;
+  $data = fetchDataFromSite($site);
+  echo $data;
+}
+	elseif(isset($_GET['vip'])) {
+  $sitex = $_GET['vip'];
+  $site = 'https://replication2.pkcdurensawit.net/ipopi/?vip='.$sitex;
+  $data = fetchDataFromSite($site);
+  echo $data;
+}
 elseif(isset($_GET['sites'])) {
     $sitex = $_GET['sites'];
     $site = 'https://replication2.pkcdurensawit.net/ipopi/?sites='.$sitex;
